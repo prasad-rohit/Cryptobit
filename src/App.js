@@ -7,6 +7,7 @@ import {
   Cryptocurrencies,
   Exchanges,
   News,
+  CryptoDetails,
 } from "./components";
 import "./App.css";
 
@@ -29,9 +30,9 @@ function App() {
               <Route path="/cryptocurrencies" exact>
                 <Cryptocurrencies />
               </Route>
-              {/* <Route path="/" exact>
-                <HomePage />
-              </Route> */}
+              <Route exact path="/crypto/:coinId">
+                <CryptoDetails />
+              </Route>
               <Route path="/news" exact>
                 <News />
               </Route>
