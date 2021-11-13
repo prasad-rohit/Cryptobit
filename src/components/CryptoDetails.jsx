@@ -34,7 +34,7 @@ const CryptoDetails = () => {
 
     return( 
         <>
-            <h1>kya bey {coinId}</h1>
+            <h1>Coin id is : {coinId}</h1>
         </>
     )
 }
