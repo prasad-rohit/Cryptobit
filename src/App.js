@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Link, Route } from "react-router-dom";
+import { Switch, Link, Route, Redirect } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import {
   Navbar,
@@ -36,6 +36,7 @@ function App() {
               <Route path="/news" exact>
                 <News />
               </Route>
+              <Redirect to="/" />
             </Switch>
           </div>
         </Layout>
