@@ -1,0 +1,8 @@
+name: My Github First Action
+on: [push]  
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the input name to STDOUT
+        run: echo The username is ${{ inputs.username }}
